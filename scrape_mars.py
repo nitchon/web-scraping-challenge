@@ -16,6 +16,7 @@ def scrape_info():
     news_url = "https://redplanetscience.com/"
     browser.visit(news_url)
     news = []
+    news_dict={}
     html = browser.html
     soup = BeautifulSoup(html,'html.parser')
     articles = soup.find_all('div',class_='list_text')
