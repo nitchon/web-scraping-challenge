@@ -22,11 +22,11 @@
             <p>{{mars.preview}}</p>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6 col-xm-12" >
                 <h2>Featured Mars Image</h2>
-                <img src="{{mars.featured_image_url}}" alt="Featured Image">
+                <img src="{{mars.featured_image_url}}" style = 'float:right' alt="Featured Image">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 col-xm-12">
                 <h2>Mars Facts</h2>
                 <table class="center">{{mars.html_table|safe}}</table>
             </div>
@@ -40,9 +40,9 @@
         </div>
         <div class="row">
             {% for hemis in mars.hemisphere %}
-            <div class="col-md-3">
+            <div class="col-xlg-3 col-md-3 col-sm-3">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="{{hemis['img_url']}}" alt="Card image cap">
+                    <img class="card-img-top" src="{{hemis['img_url']}}" alt="{{hemis['name']}}">
                     <div class="card-body">
                         <p class="card-text">{{hemis['name']}}</p>
                     </div>

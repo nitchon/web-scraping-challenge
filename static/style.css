@@ -2,7 +2,7 @@
     max-width:100%;
     height: 180px;
     display:block;
-    border: 1px;
+    border: 140px;
 }
 
 p {
@@ -16,4 +16,9 @@ h1,h2,h3,th,td {
 .dataframe {
     margin-left: auto;
     margin-right: auto;
+}
+
+img {
+    max-width:100%;
+    height:auto;
 }
